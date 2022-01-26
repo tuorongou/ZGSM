@@ -1,0 +1,249 @@
+/*页面设置和去掉链接的下划线是必不可少的一步*/
+body {
+  min-width: 4.2667rem;
+  max-width: 10rem;
+  margin: 0 auto;
+  /*临时给个高度,完成后再删除*/
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+/*为了屏膜超过750 时,不在变化,特对html进行约束*/
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 0.37 0.5px !important;
+    /*因为iphone678的屏幕是375x667的,所以375/10=37.5,,所以在软件里还得设置*/
+  }
+  /*font-size:37.5*/
+}
+/*头部模块*/
+.header {
+  height: 2.1333rem;
+  background-color: #ffffff;
+  border-bottom: 0.2px solid #1ad4b5;
+  text-align: center;
+  line-height: 2.1333rem;
+  color: #0871e9;
+  font-size: 0.9333rem;
+}
+/*导航栏模块*/
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6667rem 0 0.9333rem 0;
+}
+.nav .item {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  align-items: center;
+}
+.nav .item img {
+  width: 2.2067rem;
+  height: 2.2067rem;
+}
+.nav .item span {
+  font-size: 0.6667rem;
+  color: #a55333;
+}
+.nav .item:nth-child(-n+3) {
+  margin-bottom: 0.6533rem;
+}
+/*指导模块  含公共模块*/
+.content {
+  padding: 0.4rem;
+  /*内容往中间走一点*/
+  /* background-color: aqua;*/
+  margin: 0.2667rem;
+}
+.content .con-head {
+  display: flex;
+  /*先在一行显示*/
+  justify-content: space-between;
+  /*再两侧对齐*/
+  height: 1.0133rem;
+  line-height: 1.0133rem;
+  margin-bottom: 0.5333rem;
+  /*垂直居中*/
+  /* background-color:red;*/
+}
+.content .con-head h5 {
+  margin: 0;
+  /*标签有一个默认的外边距,要清除掉才不会被撑开*/
+  font-size: 0.5667rem;
+  /*h1-6都可以吧,反正可以设置字体*/
+  color: #8fa126;
+}
+.content .con-head a {
+  font-size: 0.5333rem;
+  color: black;
+}
+/*旋转木马轮播图,也是网站上下载进来 */
+.muma {
+  position: relative;
+  /*当前的*/
+}
+.muma .xuanxin {
+  width: 100%;
+  height: 100%;
+}
+.muma .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  /*这是后来加的竖向排列显示*/
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.7);
+  /*其余的兄弟是0.8*/
+  opacity: 0.2;
+  /*后来加的不透明度*/
+  /*后来加的对a修饰*/
+}
+.muma .swiper-slide a {
+  width: 4rem;
+  height: 4rem;
+}
+.muma .swiper-slide a img {
+  width: 100%;
+}
+.muma .swiper-slide a .KL {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .KM {
+  margin-top: 4rem;
+}
+.muma .swiper-slide a .KS {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Kmini2 {
+  margin-top: 1.6rem;
+}
+.muma .swiper-slide a .Kmini {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .KM {
+  margin-top: 1.65rem;
+}
+.muma .swiper-slide a .H {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Hevo {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Ldzlu {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Lhzld {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Ltyd {
+  margin-top: 0.8rem;
+}
+.muma .swiper-slide a .Lxzld {
+  margin-top: 1.5rem;
+}
+.muma .swiper-slide a .N {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .lqld {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .xxld {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Mqcd {
+  margin-top: 1rem;
+}
+.muma .swiper-slide a .Mufo {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Jtyufo {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Pv2 {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Pv3 {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .Pxxfgd {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .jsfgd {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .HBfgd {
+  margin-top: -0.2rem;
+}
+.muma .swiper-slide a .jdyzdqz {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .jdyzdtsz {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .jdyzdxdz {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .jdyzdzjz {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .bzy {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide a .lzb {
+  margin-top: 1.8rem;
+}
+.muma .swiper-slide p {
+  width: 5.3333rem;
+  color: #310eaf;
+  font-size: 0.5333rem;
+  font-weight: 700;
+}
+.muma .swiper-slide-active,
+.muma .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 999;
+  /*后来加的提升到最前面*/
+  opacity: 1;
+  /*后来加的不透明度*/
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.8533rem;
+  z-index: 999;
+  display: flex;
+}
+.footer .item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .item img {
+  width: 1.0333rem;
+  height: 1.0333rem;
+}
+.footer .item p {
+  font-size: 0.5133rem;
+  font-weight: 900;
+  color: red;
+  margin-top: 0;
+}

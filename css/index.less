@@ -1,0 +1,331 @@
+/*页面设置和去掉链接的下划线是必不可少的一步*/
+body {
+    min-width: 4.2667rem;
+    max-width: 10rem;
+    margin: 0 auto;
+    // height: 66.6667rem;
+    /*临时给个高度,完成后再删除*/
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none; //去掉下划线
+}
+
+/*为了屏膜超过750 时,不在变化,特对html进行约束*/
+@media screen and (min-width:750px) {
+    html {
+        font-size: .37.5px !important;
+        /*因为iphone678的屏幕是375x667的,所以375/10=37.5,,所以在软件里还得设置*/
+    }
+
+    /*font-size:37.5*/
+}
+
+/*头部模块*/
+.header {
+    height: 2.1333rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: .2px solid rgb(26, 212, 181);
+    text-align: center;
+    line-height: 2.1333rem;
+    color: rgb(8, 113, 233);
+    font-size: .9333rem;
+}
+
+/*导航栏模块*/
+.nav {
+    display: flex; //移动端对flex非常友好,所以就尽量不要去用浮动float了,不然很麻烦的
+    flex-wrap: wrap; //强制换行.如果不换行,它们就永远在一行显示了
+    padding: .6667rem 0 .9333rem 0; //这个盒子内部的所有位置调整
+
+    .item {
+        display: flex; //item当中也要flex布局才行
+        width: 33.33%; //每一行放3个,所以每个就占用33.33了
+        flex-direction: column; //把里面的元素进行纵向排列
+        align-items: center; //居中排列
+
+        img {
+            width: 2.2067rem; //把图片框在这个尺寸之内
+            height: 2.2067rem; //把图片框在这个尺寸之内
+        }
+
+        span {
+            font-size: .6667rem;
+            color: rgb(165, 83, 51)
+        }
+
+        &:nth-child(-n+3) {
+            //记住这个格式,是选择前面3个盒子
+            //在item内部看,它就是外部盒子之间调整了,所以用margin
+            margin-bottom: 0.6533rem;
+        }
+    }
+}
+
+
+
+/*指导模块  含公共模块*/
+.content {
+    padding: .4rem;
+    /*内容往中间走一点*/
+    /* background-color: aqua;*/
+    margin: .2667rem;
+
+    .con-head {
+        display: flex;
+        /*先在一行显示*/
+        justify-content: space-between;
+        /*再两侧对齐*/
+        height: 1.0133rem;
+        line-height: 1.0133rem;
+        margin-bottom: .5333rem;
+
+        /*垂直居中*/
+        /* background-color:red;*/
+        h5 {
+            margin: 0;
+            /*标签有一个默认的外边距,要清除掉才不会被撑开*/
+            font-size: .5667rem;
+            /*h1-6都可以吧,反正可以设置字体*/
+            color: rgb(143, 161, 38)
+        }
+
+        a {
+            font-size: .5333rem;
+            color: black;
+        }
+    }
+}
+
+/*旋转木马轮播图,也是网站上下载进来 */
+.muma {
+    position: relative; //箭头采用相对定位的
+
+    .xuanxin {
+        width: 100%;
+        //width: 14.4rem;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: rgb(255, 255, 255);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        /*这是后来加的竖向排列显示*/
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.7);
+        /*其余的兄弟是0.8*/
+        opacity: 0.2;
+
+        /*后来加的不透明度*/
+        /*后来加的对a修饰*/
+        a {
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                width: 100%;
+            }
+//以下是路灯--------------------------
+            .KL {
+                //   width: 100%;
+                // height: 100%;
+                margin-top: 1.8rem;
+            }
+
+            .KM {
+                //  width: 100%;
+                //  height: 100%;
+                margin-top: 4rem;
+            }
+
+            .KS {
+                //  width: 100%;
+                //  height: 100%;
+                margin-top: 1.8rem;
+            }
+
+            .Kmini2 {
+                // width: 100%;
+                //height: 2.6667rem;
+                margin-top: 1.6rem;
+            }
+
+            .Kmini {
+                //  width: 100%;
+                margin-top: 1.8rem;
+            }
+
+            .KM {
+                // width: 100%;
+
+                margin-top: 1.65rem;
+            }
+
+            .H {
+                margin-top: 1.8rem;
+
+            }
+
+            .Hevo {
+                margin-top: 1.8rem;
+            }
+
+            .Ldzlu {
+                margin-top: 1.8rem;
+            }
+
+            .Lhzld {
+                margin-top: 1.8rem;
+            }
+
+            .Ltyd {
+                margin-top: 0.8rem;
+            }
+
+            .Lxzld {
+                margin-top: 1.5rem;
+            }
+
+            .N {
+                margin-top: 1.8rem;
+            }
+
+            .lqld {
+                margin-top: 1.8rem;
+            }
+
+            .xxld {
+                margin-top: 1.8rem;
+            }
+//以下是球场灯--------------------------
+            .Mqcd {
+                margin-top: 1rem;
+            }
+////以下是UFO--------------------------
+            .Mufo {
+                margin-top: 1.8rem;
+            }
+
+            .Jtyufo {
+                margin-top: 1.8rem;
+            }
+//以下是一体灯--------------------------
+            .Pv2 {
+                margin-top: 1.8rem;
+            }
+
+            .Pv3 {
+                margin-top: 1.8rem;
+            }
+//以下是泛光灯--------------------------
+            .Pxxfgd {
+                margin-top: 1.8rem;
+            }
+
+            .jsfgd {
+                margin-top: 1.8rem;
+            }
+
+            .HBfgd {
+                margin-top: -0.2rem;
+            }
+//以下是油站灯--------------------------
+            .jdyzdqz {
+                margin-top: 1.8rem;
+            }
+
+            .jdyzdtsz {
+                margin-top: 1.8rem;
+            }
+
+            .jdyzdxdz {
+                margin-top: 1.8rem;
+            }
+
+            .jdyzdzjz {
+                margin-top: 1.8rem;
+            }
+//以下是植物灯--------------------------
+            .bzy {
+                margin-top: 1.8rem;
+            }
+
+            .lzb {
+                margin-top: 1.8rem;
+            }
+
+
+        }
+
+
+        p {
+            width: 5.3333rem;
+            color: rgb(49, 14, 175);
+            font-size: .5333rem;
+            font-weight: 700;
+            // margin-bottom: .5333rem;
+        }
+
+    }
+
+    /*当前的*/
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        z-index: 999;
+        /*后来加的提升到最前面*/
+        opacity: 1;
+        /*后来加的不透明度*/
+    }
+}
+
+
+
+.footer {
+    position: fixed; //这是一个固定标签
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.8533rem;
+    // background-color: pink;
+    z-index: 999;
+    display: flex;
+
+    .item {   
+        display: flex;
+        flex: 1;
+        flex-direction: column; //垂直布局
+        align-items: center; //居中
+       
+
+        img {
+            width: 1.0333rem;
+            height: 1.0333rem;
+        }
+
+        p {
+
+            font-size: .5133rem;
+            font-weight:900;
+            color: red;
+            margin-top: 0;
+        }
+    }
+}
