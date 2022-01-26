@@ -1,0 +1,309 @@
+<!-- 
+要装cssrem  或者  easy less插件,,
+写程序时,从已经安装好的插件入口进行设置屏幕的字体尺寸,以适配
+flexible.js:不管你是什么屏幕,它都给分成10份
+以下案例是暗中iphone678来的,可以网页检查上看出,它们是375*667
+其实只要Html与软件设置对应起来,在转换为rem时,都 是一样的,比如750/75=10
+375/37.5=10
+
+
+做滑屏效果:
+Js插件:swiper:  官方地址:https://www.swiper.com.cn  下载,解压,找到swiper.min.css和swiper.min.js,(高版本只有swiper-bundle.min.js
+)分别复制黏贴到项目文件包下面的css文件夹和js文件夹里面
+ 下载需要的css和js文件 >>官网找到类似案例>>在新窗口打开,--------才看网页源代码
+1:复制html结构.黏贴到自己的结构盒子中
+2:复制css样式:黏贴到自己的css代码上
+3:复制js语法:黏贴到自己的JS代码上
+4:根据需要定制需改模块 自己个性化修改
+
+
+利用码云上传:https://gitee.com
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 头部区域开始 -->
+    <!-- header是新增的标签 -->
+    <header class="header">杭州中港数码</header>
+
+
+    <!--导航栏开始  -->
+    <vav class="nav">
+        <a href="#" class="item">
+            <img src="./images/ADA.png" alt="">
+            <span>路灯</span>
+        </a> <a href="#" class="item">
+            <img src="./images/ETH.png" alt="">
+            <span>工厂灯</span>
+        </a> <a href="#" class="item">
+            <img src="./images/FIL.png" alt="">
+            <span>庭院灯</span>
+        </a> <a href="#" class="item">
+            <img src="./images/LINK.png" alt="">
+            <span>泛光灯</span>
+        </a> <a href="#" class="item">
+            <img src="./images/XCH.png" alt="">
+            <span>信号灯</span>
+        </a> <a href="#" class="item">
+            <img src="./images/HOT.png" alt="">
+            <span>其他</span>
+        </a>
+    </vav>
+
+
+
+
+    <!-- -----------指导模块开始 ---先做一个公共模块------->
+    <section class="content">
+        <!-- 上面一条横幅 -->
+        <div class="con-head">
+            <h5>
+                <!-- 也可以加一个盒子,设置盒子大小,再装图片 -->
+                <img src="../images/18x18.png" alt="">
+                简单介绍
+            </h5> <!-- h标签默认是上下排布 -->
+            <a href="#">滑动查看更多>></a>
+        </div>
+        <!-- 下面轮播的旋转木马图,把网站下载的Swiper那一段复制进来 -->
+        <div class="muma">
+            <!-- Swiper盒子装了一堆图片 -->
+            <div class="swiper xuanxin">
+                <div class="swiper-wrapper">
+                    <!-- 以下是路灯 -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/KL路灯.jpg" alt="" class="KL"></a>
+                        <p>KL路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/KM路灯.jpg" alt="" class="KM"></a>
+                        <p>KM路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/KS路灯.jpg" alt="" class="KS"></a>
+                        <p>KS路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/Kmini2路灯.jpg" alt="" class="Kmini2"></a>
+                        <p>Kmini2路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/Kmini路灯.jpg" alt="" class="Kmini"></a>
+                        <p>Kmini路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/H款路灯.jpg" alt="" class="H"></a>
+                        <p>H款路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/Hevo路灯.jpg" alt="" class="Hevo"></a>
+                        <p>Hevo路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/L款吊装路灯.jpg" alt="" class="Ldzlu"></a>
+                        <p>L款吊装路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/L款横装路灯.jpg" alt="" class="Lhzld"></a>
+                        <p>L款横装路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/L款庭院灯.jpg" alt="" class="Ltyd"></a>
+                        <p>L款庭院灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/L款线装路灯.jpg" alt="" class="Lxzld"></a>
+                        <p>L款线装路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/N款路灯.jpg" alt="" class="N"></a>
+                        <p>N款路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/猎枪路灯.jpg" alt="" class="lqld"></a>
+                        <p>猎枪路灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/新星路灯.jpg" alt="" class="xxld"></a>
+                        <p>新星路灯</p>
+                    </div>
+                    <!-- 以下是球场灯 -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/M款球场灯.jpg" alt="" class="Mqcd"></a>
+                        <p>M款球场灯</p>
+                    </div>
+                    <!-- 以下是UFO -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/M款UFO.jpg" alt="" class="Mufo"></a>
+                        <p>M款UFO</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/金太阳UFO.jpg" alt="" class="Jtyufo"></a>
+                        <p>金太阳UFO</p>
+                    </div>
+                    <!-- 以下是一体灯 -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/PV2一体灯.jpg" alt="" class="Pv2"></a>
+                        <p>PV2一体灯</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/PV3一体灯.jpg" alt="" class="Pv3"></a>
+                        <p>PV3一体灯</p>
+                    </div>
+                    
+                    <!-- 以下是泛光灯 -->
+
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/P款线性泛光灯.jpg" alt="" class="Pxxfgd"></a>
+                        <p>P款线性泛光灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/极速泛光灯.jpg" alt="" class="jsfgd"></a>
+                        <p>极速泛光灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/H泛光灯.jpg" alt="" class="Hfgd"></a>
+                        <p>H泛光灯</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/HB泛光灯.jpg" alt="" class="HBfgd"></a>
+                        <p>HB泛光灯</p>
+                    </div>
+                    <!-- 以下是油站灯 -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/金盾油站灯(嵌装).jpg" alt="" class="jdyzdqz"></a>
+                        <p>金盾油站灯(嵌装)</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/金盾油站灯(投射装).jpg" alt="" class="jdyzdtsz"></a>
+                        <p>金盾油站灯(投射装)</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/金盾油站灯(吸顶装).jpg" alt="" class="jdyzdxdz"></a>
+                        <p>金盾油站灯(吸顶装)</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/金盾油站灯(支架装).jpg" alt="" class="jdyzdzjz"></a>
+                        <p>金盾油站灯(支架装)</p>
+                    </div>
+                    <!-- 以下是植物灯 -->
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/八爪鱼.jpg" alt="" class="bzy"></a>
+                        <p>八爪鱼</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="./images/量子板.jpg" alt="" class="lzb"></a>
+                        <p>量子板</p>
+                    </div>
+
+
+                    <!-- Add Pagination 翻页圆点,不用就注释掉
+                    <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+
+            <!-- 添加左右箭头 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+
+
+    
+
+
+    <!-------------最底部的模块  footer是一个字体内置标签------- -->
+    <footer class="footer">
+        <a href="#" class="item">
+            <p>Z</p>
+            <img src="./images/28.PNG" alt="">
+            
+        </a>
+        <a href="#" class="item">
+            <p>G</p>
+            <img src="./images/28.PNG" alt="">
+            
+        </a> <a href="#" class="item">
+            <p>S</p>
+            <img src="./images/28.PNG" alt="">
+            
+        </a> <a href="#" class="item">
+            <p>M</p>
+            <img src="./images/28.PNG" alt="">
+            
+        </a>
+    </footer>
+
+
+
+
+    <!-------------------------------script--------------------------->
+    <!-------------------------------script----------------------------->
+
+    <!-- 阿里的10等份引入 -->
+    <script src="./js/flexible.js"></script>
+
+    <!-- 插件的效果引入,,这个是高版本-->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+
+
+    <script>
+        /* 插件里面的网页源代码 好几个地方都要用到这个轮播代码,所以把它修改一下,建一个沙箱函数*/
+        var swiper = new Swiper('.xuanxin', {
+            slidesPerView: 1.8,//界面加起来总共能显示几张图片
+            spaceBetween: 22,//盒子之间的距离
+            centeredSlides: true,//选中的居中
+            loop: true,//循环显示
+            //这是取消翻页的圆点,不用就注释掉
+            /*pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },*/
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        /*不知道为什么不能用沙箱函数*/
+        var swiper = new Swiper(".mySwiper", {
+            //看见3个,支持小数点
+            slidesPerView: 3,
+            //图之间的间距
+            spaceBetween: 10,
+            //不要小圆点,可以注释掉
+            /*  pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+              },*/
+            // 如果需要滚动条
+            /*  scrollbar: {
+                  el: '.swiper-scrollbar',
+              },*/
+
+        });
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
