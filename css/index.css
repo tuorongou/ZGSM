@@ -76,6 +76,10 @@ a {
   color: #8fa126;
 }
 .content .con-head a {
+  display:block;
+  height:0.8rem;
+  text-align: center;
+  line-height: 0.8rem;
   font-size: 0.5333rem;
   color: black;
 }
