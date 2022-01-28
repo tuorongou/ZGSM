@@ -31,7 +31,7 @@ a {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.6667rem 0 0.9333rem 0;
+  padding: 0.6667rem 0 0.6333rem 0;
 }
 .nav .item {
   display: flex;
