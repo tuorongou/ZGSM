@@ -114,7 +114,7 @@ a {
   transition: 300ms;
   transform: scale(0.7);
   /*其余的兄弟是0.8*/
-  opacity: 0.2;
+  opacity: 0.3;
   /*后来加的不透明度*/
   /*后来加的对a修饰*/
 }
