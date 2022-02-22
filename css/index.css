@@ -227,7 +227,7 @@ a {
   /*后来加的不透明度*/
 }
 .footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -242,12 +242,15 @@ a {
   align-items: center;
 }
 .footer .item img {
-  width: 2.0333rem;
-  height: 2.0333rem;
+  width: 100%;
+ 
 }
 .footer .item p {
   font-size: 1.8133rem;
   font-weight: 900;
   color: red;
   margin-top: -1.2rem;
+}
+.logotu{
+  margin-top: 145px;
 }
