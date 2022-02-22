@@ -18,15 +18,17 @@
 
         .form {
             margin: 0 auto;
-            margin-top: 6.3333rem;
+            margin-top: 3.3333rem;
             text-align: center;
-            width: 16rem;
+            width: 19rem;
             height: 28rem;
             background: rgb(255 255 255 / 30%);
             color: #2b86d6;
             /* border: 1px solid black; */
+        }
 
-
+        .form label {
+            font-Size: 1.5rem;
         }
 
         .form h1 {
@@ -37,27 +39,41 @@
         .form p {
             display: block;
             width: 100%;
-            height: 2.6667rem;
-            padding-top: 2.5rem;
+            height: 2.6rem;
+            padding-top: 2.2rem;
 
+        }
+
+        .form input {
+            font-size: 1.5rem;
+            padding: 10px;
+            width: 69%;
         }
 
 
         .form button {
-            width: 80%;
-            height: 3.0rem;
+            width: 40%;
+            height: 3rem;
             border-radius: 1.2rem;
-            background-color: rgb(127, 158, 177);
-            color: #ddd;
+            background-color: rgba(79, 158, 64, 0.4);
+            /* color: rgb(99, 89, 89); */
+            font-size: 1.6rem;
             cursor: pointer;
-            margin-bottom: 0.5rem;
+            /* margin-bottom: 0.5rem; */
             /* 鼠标变成小手 */
             border: none;
         }
 
+        .form .qu {
+            color: rgb(255, 0, 0);
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
         .form a {
-            color: #ddd;
+            color: rgb(255, 0, 0);
             text-decoration: none;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -66,21 +82,21 @@
 
 <body>
     <form class="form">
-        <h2>登录产品库</h2>
+        <h1>登录产品库</h1>
         <p>
-            <label for="user">用户名</label>
+            <label for="user">账号:</label>
             <input type="text" id="username" placeholder="请输入账号" value="">
         </p>
         <p>
-            <label for="pwd">密码</label>
-            <input type="password" id="pwd" placeholder="密码" value="">
+            <label for="pwd">密码:</label>
+            <input type="password" id="pwd" placeholder="请输入密码" value="">
         </p>
-        <p>
+        <!-- <p>
             <input type="checkbox" id="chk" />记住密码
-        </p>
+        </p> -->
         <p>
             <button id="denglu"><a id="tiaozhuan" href="##">登录</a></button>
-            <button id="quxiao">取消</button>
+            <button id="quxiao" class="qu">取消</button>
         </p>
 
     </form>
@@ -104,7 +120,7 @@
                 alert("账号或密码不为空");
             } else {
                 if (username.value == "168" && pwd.value == "158") {
-                    alert("登录成功");
+                    // alert("登录成功");
                     window.open("canpin.html");
                     //转跳的HTML页面需要与当前HTML页面在一个文件夹中   各种图片也是
                 } else {
