@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 25px;
+            font-family: '楷体', Courier, monospace;
+            color: white;
+            background-color: red;
+            /* text-align: center; */
+            /*font-weight: normal;不加粗*/
+            position: fixed;
+            top: -10px;
+            left: 36px;
+        }
+
+        .tuo {
+            display: grid;
+            margin-top: 45px;
+            grid-template-columns: 1.2fr 1fr;
+            /*用fr盒子会被内容撑开*/
+            grid-template-rows: 200px 150px auto;
+            gap: 2px 2px;
+
+            /* overflow: hidden; */
+            grid-template-areas:
+                /*分成3列4行*/
+                "a  b"
+                "c  b "
+                "d  d "
+            ;
+        }
+
+
+        nav {
+            grid-area: a;
+            /* max-width: 80px; */
+            /* box-sizing: border-box; */
+            font-size: 14px;
+        }
+
+        section {
+            grid-area: c;
+            /* max-width: 80px; */
+        }
+
+        main {
+            grid-area: b;
+           font-size: 12px;
+        }
+
+        footer {
+            grid-area: d;
+            min-height: 300px;
+        }
+        footer img{
+width: 100%;
+        }
+
+        /* ----------------------------------------------- */
+        .tuo :nth-child(1) {
+            background-color: rgb(124, 124, 124);
+        }
+
+        .tuo :nth-child(2) {
+            background-color: rgba(182, 0, 9);
+        }
+
+        .tuo :nth-child(3) {
+            background-color: rgba(251, 255, 0);
+        }
+
+        .tuo :nth-child(4) {
+            background-color: rgb(136, 136, 136);
+        }
+
+
+
+
+        h5 {
+            font-size: 12px;
+            font-family: '楷体', Courier, monospace;
+            color: rgb(0, 4, 255);
+            /* text-align: center; */
+            font-weight: normal;
+            position: fixed;
+            bottom: 0;
+            right: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>杭州中港数码技术有限公司</h2>
+
+    <div class="tuo">
+
+        <nav>
+           规格型号:ZGSM-LD-K240
+        </nav>
+        <section>
+            特殊说明:可匹配光谱
+        </section>
+        <main>它具有以下特点:<br>
+        1:最大输出功率高达240W.<br>
+        2:采用国内知名品牌电源.<br>
+        3:xxxxxxx
+        </main>
+        <footer>
+            <img src="./images/KL路灯.jpg" alt="">
+        </footer>
+    </div>
+
+    <h5>地址:杭州临安玲珑工业区锦溪南路1188号<br>
+        电话:0571-63968819 15958131886庹荣鸥</h5>
+
+
+</body>
+
+</html>
