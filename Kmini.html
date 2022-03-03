@@ -36,7 +36,7 @@
         .tuo {
             display: grid;
             margin-top: 17.3333vw;
-            grid-template-columns: 24.6vw  24.6vw 24.6vw 24.6vw;
+            grid-template-columns: 24.6vw 24.6vw 24.6vw 24.6vw;
             ;
             /*用fr盒子会被内容撑开*/
             grid-template-rows: 36.2666vw 51.2vw 29.8666vw auto;
@@ -76,12 +76,28 @@
         }
 
         main {
+            position: relative;
             grid-area: b;
             background-color: rgb(176, 241, 231);
             border-radius: 3.95vw;
             padding: 2.1333vw;
             font-family: '楷体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
             background: -webkit-linear-gradient(top, rgb(21, 172, 89), rgb(12, 162, 182), rgb(96, 96, 209));
+        }
+
+        main .xiangqingye {
+            position: absolute;
+            width: 28vw;
+            right: 2vw;
+            bottom: 6vw;
+
+        }
+
+        main a {
+            color: rgb(0, 255, 13);
+            font-size: 5vw;
+            font-family:"黑体";
+
         }
 
         .suomin {
@@ -112,13 +128,13 @@
             overflow: scroll;
             white-space: nowrap;
             /* background: rgba(29, 129, 187, 0.5); */
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4bf19e), to(#3c4f53));
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
         }
 
         aside {
             grid-area: d;
             /* background-color: rgb(119, 216, 200); */
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1356d3), to(#12852f));
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
             border-radius: 3.41333vw;
             padding: 1.4933vw 0 0 0;
             font-family: '宋体';
@@ -138,7 +154,7 @@
             color: aliceblue;
             overflow: scroll;
             white-space: nowrap;
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4bf19e), to(#3c4f53));
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
         }
 
         .renzhen {
@@ -151,7 +167,7 @@
             color: aliceblue;
             overflow: scroll;
             white-space: nowrap;
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1356d3), to(#12852f));
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
         }
 
         footer {
@@ -184,7 +200,7 @@
             color: rgb(0, 4, 255);
             font-weight: normal;
             position: fixed;
-            bottom: -4.8vw;
+            bottom: 4.2vw;
             white-space: pre-wrap;
             text-align: center;
             /*保留空白*/
@@ -225,9 +241,10 @@
             6:5050最高光效160LM/W<br>
             7:仰角可调<br>
             8:水平、垂直皆可安装
+            <div class="xiangqingye"><a href="./StreetLight-datasheet/DS_Kmini_StreetLight.pdf">查看详情页</a></div>
         </main>
         <div class="suomin">
-            <img src="./images/Kmini2路灯.jpg" alt="">
+            <img src="./images/Kmini路灯.jpg" alt="">
         </div>
         <section>
             &ensp;可选光谱:<br>
@@ -255,7 +272,7 @@
             &ensp;&ensp;LM80<br>
         </div>
         <footer>
-            <img src="./images/Kmini2-bei-jin.jpg" alt="">
+            <img src="./images/Kmini-bei-jin.jpeg" alt="">
         </footer>
     </div>
 
