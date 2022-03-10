@@ -293,7 +293,7 @@ h5 {
   margin-top: 10vw;
 }
 /* 图片下面的文字 */
-.muma .swiper-slide p {
+.muma .swiper-slide a {
   width: 53vw;
   color: #310eaf;
   font-size: 5vw;
