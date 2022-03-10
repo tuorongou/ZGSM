@@ -10,46 +10,64 @@
     <!--是一个可以定制的CSS文件，它让不同的浏览器在渲染网页元素的时候形式更统一。-->
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0 auto;
         }
-            h2 {
-            font-size: 6.14vw;
-            font-family: '楷体', Courier, monospace;
-            color: white;
-            background-color: rgb(39, 90, 185);
-            border-radius: 2.13vw;
-            padding: 0.53vw .714vw .53vw .714vw;
-            box-shadow: 0.8vw 0.53vw 3.53vw 0.43vw rgb(1 128 212);
-            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
-            /* text-align: center; */
-            /*font-weight: normal;不加粗*/
-            position: fixed;
-            top: -4vw;
-            left: 12.68vw;
-            z-index: 99;
-            /*不然这个标题要被挡住*/
+
+        a {
+            text-decoration: none;
         }
 
         .tuo {
             display: grid;
-            margin-top: 17.3333vw;
+            margin-top: 5vw;
             grid-template-columns: 24.6vw 24.6vw 24.6vw 24.6vw;
             ;
             /*用fr盒子会被内容撑开*/
-            grid-template-rows: 36.2666vw 51.2vw 29.8666vw auto;
+            grid-template-rows: 15vw 36.2666vw 51.2vw 36vw auto;
             gap: 0.5333vw 0.5333vw;
             /* font-size: 2.6666vw; */
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             /* overflow: hidden; */
             grid-template-areas:
                 /*分成4列4行*/
+                "k  k  k  k"
                 "a  a  h  h"
                 "b  b  b  b"
                 "c  d  e  g"
                 "f  f  f  f"
             ;
+            /* justify-items: center; */
+            align-items: center;
         }
+
+        h2 {
+            grid-area: k;
+            font-size: 6.14vw;
+            font-family: '楷体', Courier, monospace;
+            color: white;
+            background-color: rgb(39, 90, 185);
+            border-radius: 2.13vw;
+            /* margin: 1vw auto; */
+            /* padding: 1.53vw .714vw .53vw .714vw; */
+            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
+            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
+            /* text-align: center; */
+            /*font-weight: normal;不加粗*/
+            /* position: fixed; */
+            /* top: -4vw;
+            left: 12.68vw; */
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            z-index: 99;
+            /*不然这个标题要被挡住*/
+
+            text-align: center;
+
+        }
+
+
 
 
 
@@ -64,7 +82,8 @@
             border-radius: 3.95vw;
             padding: 1.066vw;
             /*超出的内容可以滚屏来看*/
-            overflow: scroll;
+            overflow-x: scroll;
+            overflow-y: scroll;
             /* 不要换行 */
             white-space: nowrap;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -76,10 +95,16 @@
         main {
             position: relative;
             grid-area: b;
+            height: 51.2vw;
             background-color: rgb(176, 241, 231);
             border-radius: 3.95vw;
+            margin-top: 3vw;
             padding: 2.1333vw;
             font-size: 4vw;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            /* 不要换行 */
+            white-space: nowrap;
             font-family: '楷体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
             background: -webkit-linear-gradient(top, rgb(206, 234, 219), rgb(171, 239, 235), rgb(175, 175, 197));
         }
@@ -88,14 +113,15 @@
             position: absolute;
             width: 28vw;
             right: 2vw;
-            bottom: 6vw;
+            top: 2vw;
 
         }
 
         main a {
-            color: rgb(0, 255, 13);
+            color: rgb(197, 20, 50);
             font-size: 5vw;
-            font-family: "黑体";
+            font-weight: 600;
+            /* font-family: "黑体"; */
 
         }
 
@@ -117,10 +143,13 @@
 
         section {
             grid-area: c;
+            width: 24.6vw;
+            height: 30vw;
             /* max-width: 80px; */
             /* background-color: rgb(156, 165, 216); */
             border-radius: 3.41333vw;
             padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
             font-family: '宋体';
             font-size: 3vw;
             font-weight: 500;
@@ -134,8 +163,11 @@
         aside {
             grid-area: d;
             /* background-color: rgb(119, 216, 200); */
+            width: 24.6vw;
+            height: 30vw;
             border-radius: 3.41333vw;
             padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
             font-family: '宋体';
             font-size: 3vw;
             font-weight: 500;
@@ -148,8 +180,11 @@
 
         .Ra {
             grid-area: e;
+            width: 24.6vw;
+            height: 30vw;
             border-radius: 3.41333vw;
             padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
             font-family: '宋体';
             font-size: 3vw;
             font-weight: 500;
@@ -162,8 +197,11 @@
 
         .renzhen {
             grid-area: g;
+            width: 24.6vw;
+            height: 30vw;
             border-radius: 3.41333vw;
             padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
             font-family: '宋体';
             font-size: 3vw;
             font-weight: 500;
@@ -178,7 +216,8 @@
             grid-area: f;
             min-height: 80vw;
             background-color: rgb(223, 223, 223);
-            border-radius: 3.4133vw;
+            border-radius: 13.4133vw;
+            margin-top: 3vw;
         }
 
         footer img {
@@ -200,14 +239,14 @@
 
         h5 {
             font-size: 3.2vw;
-            font-family: '楷体', Courier, monospace;
+            font-family: "'楷体', Courier, monospace";
             color: rgb(0, 4, 255);
             font-weight: normal;
             position: fixed;
-            bottom: -7.8vw;
+            bottom: -5.8vw;
+            /* 保留空格*/
             white-space: pre-wrap;
             text-align: center;
-            /*保留空白*/
             /* align-content: center;
             justify-content: center;
             margin: 0 auto; */
@@ -217,19 +256,25 @@
 
 <body>
 
-    <h2>杭州中港数码技术有限公司</h2>
+
 
     <div class="tuo">
+        <h2>杭州中港数码技术有限公司</h2>
         <nav>
             规格型号:<br>
-            CL420-4  /2088颗LEDs<br>
-            CL650-6  /3132颗LEDs<br>
-            CL750-7  /3654颗LEDs<br>
+            CL420-4 /2088颗LEDs<br>
+            CL650-6 /3132颗LEDs<br>
+            CL750-7 /3654颗LEDs<br>
         </nav>
         <main>它具有以下特点:<br>
             1:优质铝型材外壳<br>
             2:高显色指数:Ra>80<br>
             3:最大输出功率1000W<br>
+            4:采用国内知名品牌可调光电源<br>
+            5:最高PPE:2.8 µmol/J<br>
+            6:最高PPF:CL420-4 /1176 µmol/s<br>
+            7:最高PPF:CL650-6 /1820 µmol/s<br>
+            8:最高PPF:CL750-7 /2100 µmol/s
             4:采用国内知名品牌可调光电源<br>
             5:最高PPE:2.8 µmol/J<br>
             6:最高PPF:CL420-4 /1176 µmol/s<br>
@@ -264,9 +309,10 @@
     </div>
 
     <h5>
-        &ensp;&ensp;&ensp;&ensp;地址:杭州临安玲珑工业区锦溪南路1188号
-        &ensp;&ensp;&ensp;&ensp;W:t372151 Q:530847653 15958131886庹荣鸥
+        地址:杭州临安玲珑工业区锦溪南路1188号
+        W:t372151 Q:530847653 15958131886庹荣鸥
     </h5>
+
 
 
 </body>
