@@ -18,30 +18,7 @@
             text-decoration: none;
         }
 
-        .tuo {
-            display: grid;
-            margin-top: 5vw;
-            grid-template-columns: 24.6vw 24.6vw 24.6vw 24.6vw;
-            /*用fr盒子会被内容撑开*/
-            grid-template-rows: 9vw 35vw 51.2vw 36vw auto;
-            gap: 0.5333vw 0.5333vw;
-            /* font-size: 2.6666vw; */
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            /* overflow: hidden; */
-            grid-template-areas:
-                /*分成4列4行*/
-                "k  k  k  k"
-                "a  a  h  h"
-                "b  b  b  b"
-                "c  d  e  g"
-                "f  f  f  f"
-            ;
-            /* justify-items: center; */
-            align-items: center;
-        }
-
         h2 {
-            grid-area: k;
             font-size: 8vw;
             font-family: '楷体', Courier, monospace;
             color: white;
@@ -61,7 +38,58 @@
             transform: translate(-50%, -50%); */
             z-index: 99;
             /*不然这个标题要被挡住*/
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            text-align: center;
 
+        }
+
+        .tuo {
+            display: grid;
+            margin-top: 5vw;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+            /*用fr盒子会被内容撑开*/
+            grid-template-rows: 9vw 36vw 51.2vw 36vw auto;
+            /* gap:1.5333vw 1.5333vw; */
+            /* font-size: 2.6666vw; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* overflow: hidden; */
+            grid-template-areas:
+                /*分成4列4行*/
+                ".  .  .  ."
+                "a  a  h  h"
+                "b  b  b  b"
+                "c  d  e  g"
+                "f  f  f  f"
+            ;
+            /* justify-items: center; */
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 8vw;
+            font-family: '楷体', Courier, monospace;
+            color: white;
+            background-color: rgb(39, 90, 185);
+            border-radius: 5vw;
+            /* margin: 1vw auto; */
+            /* padding: 1.53vw .714vw .53vw .714vw; */
+            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
+            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
+            /* text-align: center; */
+            /*font-weight: normal;不加粗*/
+            /* position: fixed; */
+            /* top: -4vw;
+            left: 12.68vw; */
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            z-index: 99;
+            /*不然这个标题要被挡住*/
+            align-items: center;
+            justify-content: center;
+            align-self: center;
             text-align: center;
 
         }
@@ -80,13 +108,12 @@
             /* background-color: rgb(250, 135, 135); */
             /* border-radius: 3.95vw; */
             padding-left: 10vw;
-            padding-top: 10vw;
             height: 35vw;
             /*超出的内容可以滚屏来看*/
             overflow: scroll;
             /* 不要换行 */
             white-space: nowrap;
-            font-family:'宋体',Arial, Helvetica, sans-serif;
+            font-family: '宋体', Arial, Helvetica, sans-serif;
             /* transform:rotate(30deg); 把这个盒子转一个 角度 */
             background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
             /* box-shadow: 0.1875rem 0.125rem 0.825rem 0.125rem rgb(45, 207, 12); */
@@ -111,18 +138,24 @@
 
         main .xiangqingye {
             position: absolute;
-            width: 28vw;
-            right: 2vw;
-            top: 2vw;
+            width: 30vw;
+            right: 1vw;
+            bottom: 1vw;
 
         }
 
         main a {
-            color: rgb(197, 20, 50);
-            font-size: 5vw;
-            font-weight: 600;
+            display: block;
+            color: rgb(255, 255, 255);
+            font-size: 7vw;
+            font-weight: 700;
             /* font-family: "黑体"; */
-
+            background-color: #2394ff;
+            width: 30vw;
+            height: 30vw;
+            border-radius: 15vw;
+            text-align: center;
+            line-height: 30vw;
         }
 
         .suomin {
@@ -131,6 +164,8 @@
             background-color: rgb(255, 255, 255);
             /* border-radius: 3.95vw; */
             position: relative;
+            overflow: scroll;
+            white-space: nowrap;
         }
 
         .suomin img {
@@ -255,9 +290,9 @@
 </head>
 
 <body>
-
+    <h2>杭州中港数码技术有限公司</h2>
     <div class="tuo">
-        <h2>杭州中港数码技术有限公司</h2>
+
         <nav>
             规格型号:<br>
             ZGSM-LD40H4<br>
@@ -276,7 +311,7 @@
             ZGSM-LD180H6<br>
             ZGSM-LD240H6
         </nav>
-        
+
         <main>它具有以下特点:<br>
             1:铝压铸电源腔体、铝型材散热<br>
             2:模块式发光,抗紫外线PC透镜<br>
@@ -286,7 +321,7 @@
             6:5050光效165LM/W<br>
             7:仰角可调<br>
             8:水平、垂直皆可安装
-            <div class="xiangqingye"><a href="./StreetLight-datasheet/DS_H_StreetLight.pdf">查看详情页</a></div>
+            <div class="xiangqingye"><a href="./StreetLight-datasheet/DS_H_StreetLight.pdf">查看详情</a></div>
         </main>
         <div class="suomin">
             <img src="./images/H款路灯.jpg" alt="">
@@ -330,8 +365,8 @@
     </div>
 
     <h5>
-        &ensp;&ensp;地址:杭州临安玲珑工业区锦溪南路1188号
-        &ensp;&ensp;W:t372151 Q:530847653 15958131886庹荣鸥
+        &ensp;&ensp;&ensp;地址:杭州临安玲珑工业区锦溪南路1188号
+        &ensp;&ensp;&ensp;W:t372151 Q:530847653 15958131886庹荣鸥
     </h5>
 
 
