@@ -314,9 +314,10 @@ h5 {
   left: 0;
   bottom: 0;
   width: 100%;
+  text-align:center;
   /* heiht: 0.8533rem; */
   z-index: 999;
-  display: flex;
+
 }
 
 /* .footer .item {
@@ -326,7 +327,7 @@ h5 {
   align-items: center;
 } */
 .footer img {
-  width: 100%;
+  width: 90%;
 }
 
 /*
