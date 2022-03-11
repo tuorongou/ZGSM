@@ -22,12 +22,14 @@
             font-size: 7vw;
             font-family: '楷体', Courier, monospace;
             color: white;
-            background-color: rgb(39, 90, 185);
+            background-color: rgb(62, 127, 247);
             border-radius: 3.5vw;
-            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
+            box-shadow: 0 0.53vw 10vw 1.5vw rgb(0 161 255);
             z-index: 99;
-            /* text-align: center; */
+            text-align: center;
         }
+
+
 
         .tuo {
             display: grid;
@@ -50,35 +52,6 @@
             /* justify-items: center; */
             align-items: center;
         }
-
-        h2 {
-            font-size: 8vw;
-            font-family: '楷体', Courier, monospace;
-            color: white;
-            background-color: rgb(39, 90, 185);
-            border-radius: 5vw;
-            /* margin: 1vw auto; */
-            /* padding: 1.53vw .714vw .53vw .714vw; */
-            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
-            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
-            /* text-align: center; */
-            /*font-weight: normal;不加粗*/
-            /* position: fixed; */
-            /* top: -4vw;
-            left: 12.68vw; */
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            z-index: 99;
-            /*不然这个标题要被挡住*/
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-
-        }
-
-
 
 
 
@@ -256,59 +229,71 @@
             background-color: rgba(251, 255, 0);
         }*/
 
-        h5 {
-            font-size: 3.2vw;
-            font-family: "'楷体', Courier, monospace";
-            color: rgb(0, 4, 255);
-            font-weight: normal;
+
+
+        .dizhi {
             position: fixed;
-            bottom: -5.8vw;
-            /* 保留空格*/
-            white-space: pre-wrap;
+            bottom: 5vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
             text-align: center;
-            /* align-content: center;
-            justify-content: center;
-            margin: 0 auto; */
-            align-items: center;
-            justify-content: center;
-            align-self: center;
+            font-size: 3vw;
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
+        }
+
+        .lianxifanshi {
+            position: fixed;
+            bottom: 1vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
             text-align: center;
+            font-size: 3vw;
+            /* white-space:inherit; */
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
         }
     </style>
 </head>
 
 <body>
     <h2>杭州中港数码技术有限公司</h2>
-    <div class="tuo">
 
+
+    <div class="tuo">
         <nav>
             规格型号:<br>
-            ZGSM-LD40H4<br>
-            ZGSM-LD80H4<br>
-            ZGSM-LD120H4<br>
-            ZGSM-LD160H4<br>
-            ZGSM-LD200H4<br>
-            ZGSM-LD240H4<br>
-            ZGSM-LD50H5<br>
-            ZGSM-LD100H5<br>
-            ZGSM-LD150H5<br>
-            ZGSM-LD200H5<br>
-            ZGSM-LD240H5<br>
-            ZGSM-LD60H6<br>
-            ZGSM-LD120H6<br>
-            ZGSM-LD180H6<br>
-            ZGSM-LD240H6
+            ZGSM-FL07-30M<br>
+            ZGSM-FL07-30M+<br>
+            ZGSM-FL07-40M<br>
+            ZGSM-FL07-50M<br>
+            ZGSM-FL07-60M<br>
+            ZGSM-FL07-60M+<br>
+            ZGSM-FL07-80M<br>
+            ZGSM-FL07-80M+<br>
+            ZGSM-FL07-100M<br>
+            ZGSM-FL07-120M<br>
+            ZGSM-FL07-150L<br>
+            ZGSM-FL07-150L+<br>
+            ZGSM-FL07-180L<br>
+            ZGSM-FL07-180L+<br>
+            ZGSM-FL07-120<br>
+            ZGSM-FL07-1240
+
         </nav>
 
         <main>它具有以下特点:<br>
-            1:铝压铸电源腔体、铝型材散热<br>
-            2:模块式发光,抗紫外线PC透镜<br>
+            1:铝压铸外壳<br>
+            2:玻璃发光面<br>
             3:最大输出功率高达240W<br>
             4:采用国内知名品牌电源<br>
-            5:3030光效140LM/W<br>
-            6:5050光效165LM/W<br>
-            7:仰角可调<br>
-            8:水平、垂直皆可安装
+            5:3030光源最高光效165LM/W<br>
+            6:5050光源最高光效170LM/W<br>
+            7:任意角度皆可安装<br>
+            8:徒手可开启玻璃面盖
+
             <div class="xiangqingye"><a href="./FloodLigh-datasheet/DS_Zoom_FloodLight.pdf">查看详情</a></div>
         </main>
         <div class="suomin">
@@ -316,11 +301,12 @@
         </div>
         <section>
             &ensp;可选光谱:<br>
-            &ensp;&ensp;TYPE I-M(30) <br>
-            &ensp;&ensp;TYPE II-M(30/50) <br>
-            &ensp;&ensp;TYPE II-BLS(30) <br>
-            &ensp;&ensp;TYPE III-M(30/50)<br>
-            &ensp;&ensp;TYPE V-S(30/50)
+            &ensp;&ensp;25度<br>
+            &ensp;&ensp;60度<br>
+            &ensp;&ensp;90度<br>
+            &ensp;&ensp;120度<br>
+            &ensp;&ensp;T3S<br>
+
         </section>
         <div class="Ra">
             &ensp;可选显指:<br>
@@ -337,26 +323,22 @@
         </aside>
         <div class="renzhen">
             &ensp;取得认证:<br>
-            &ensp;&ensp;CE/CB<br>
-            &ensp;&ensp;ENEC<br>
+            &ensp;&ensp;CE<br>
             &ensp;&ensp;ROHS<br>
-            &ensp;&ensp;IK10/IP66<br>
-            &ensp;&ensp;LM79/LM80<br>
-            &ensp;&ensp;UL<br>
-            &ensp;&ensp;GS<br>
-            &ensp;&ensp;FCC<br>
-            &ensp;&ensp;SAA<br>
+
         </div>
         <footer>
             <img src="./images/泛光灯应用场景.jpg" alt="">
         </footer>
     </div>
 
-    <h5>
-        &ensp;&ensp;&ensp;地址:杭州临安玲珑工业区锦溪南路1188号
-        &ensp;&ensp;&ensp;W:t372151 Q:530847653 15958131886庹荣鸥
-    </h5>
 
+    <div class="dizhi">
+        杭州临安玲珑工业区锦溪南路1188号
+    </div>
+    <div class="lianxifanshi">
+        微信：t372151&ensp; QQ：530847653&ensp; 手机：15958131886&ensp;庹荣鸥
+    </div>
 
 
 </body>

@@ -19,30 +19,14 @@
         }
 
         h2 {
-            font-size: 8vw;
+            font-size: 7vw;
             font-family: '楷体', Courier, monospace;
             color: white;
-            background-color: rgb(39, 90, 185);
-            border-radius: 5vw;
-            /* margin: 1vw auto; */
-            /* padding: 1.53vw .714vw .53vw .714vw; */
-            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
-            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
-            /* text-align: center; */
-            /*font-weight: normal;不加粗*/
-            /* position: fixed; */
-            /* top: -4vw;
-            left: 12.68vw; */
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
+            background-color: rgb(62, 127, 247);
+            border-radius: 3.5vw;
+            box-shadow: 0 0.53vw 10vw 1.5vw rgb(0 161 255);
             z-index: 99;
-            /*不然这个标题要被挡住*/
-            align-items: center;
-            justify-content: center;
-            align-self: center;
             text-align: center;
-
         }
 
         .tuo {
@@ -66,35 +50,6 @@
             /* justify-items: center; */
             align-items: center;
         }
-
-        h2 {
-            font-size: 8vw;
-            font-family: '楷体', Courier, monospace;
-            color: white;
-            background-color: rgb(39, 90, 185);
-            border-radius: 5vw;
-            /* margin: 1vw auto; */
-            /* padding: 1.53vw .714vw .53vw .714vw; */
-            box-shadow: 0 0.53vw 10vw 1.5vw rgb(51, 255, 0);
-            /*水平方向,垂直方向,模糊距离(可选),阴影尺寸(可选),阴影颜色盒子阴影*/
-            /* text-align: center; */
-            /*font-weight: normal;不加粗*/
-            /* position: fixed; */
-            /* top: -4vw;
-            left: 12.68vw; */
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            z-index: 99;
-            /*不然这个标题要被挡住*/
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            text-align: center;
-
-        }
-
-
 
 
 
@@ -128,8 +83,7 @@
             margin-top: 3vw;
             padding: 2.1333vw;
             font-size: 4vw;
-            overflow-x: scroll;
-            overflow-y: scroll;
+            overflow: scroll;
             /* 不要换行 */
             white-space: nowrap;
             font-family: '楷体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
@@ -263,28 +217,30 @@
         .tuo :nth-child(1) {
             background-color: rgb(124, 124, 124);
         }
+*/
 
-        .tuo :nth-child(2) {
-            background-color: rgb(59, 223, 201);
+        .dizhi {
+            position: fixed;
+            bottom: 5vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
         }
 
-        .tuo :nth-child(3) {
-            background-color: rgba(251, 255, 0);
-        }*/
-
-        h5 {
-            font-size: 3.2vw;
-            font-family: "'楷体', Courier, monospace";
-            color: rgb(0, 4, 255);
-            font-weight: normal;
+        .lianxifanshi {
             position: fixed;
-            bottom: -5.8vw;
-            /* 保留空格*/
-            white-space: pre-wrap;
+            bottom: 1vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
             text-align: center;
-            /* align-content: center;
-            justify-content: center;
-            margin: 0 auto; */
+            font-size: 3vw;
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
         }
     </style>
 </head>
@@ -364,10 +320,12 @@
         </footer>
     </div>
 
-    <h5>
-        &ensp;&ensp;&ensp;地址:杭州临安玲珑工业区锦溪南路1188号
-        &ensp;&ensp;&ensp;W:t372151 Q:530847653 15958131886庹荣鸥
-    </h5>
+    <div class="dizhi">
+        杭州临安玲珑工业区锦溪南路1188号
+    </div>
+    <div class="lianxifanshi">
+        微信：t372151&ensp; QQ：530847653&ensp; 手机：15958131886&ensp;庹荣鸥
+    </div>
 
 
 
