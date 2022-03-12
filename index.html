@@ -14,7 +14,7 @@
             background-repeat: no-repeat;
             background-size: 100%;
             background-attachment: fixed;
-            background-position: center 120vw;
+            background-position: center 125vw;
         }
 
         a {
@@ -39,7 +39,7 @@
                 "d  d  "
                 "e  e  "
                 "f  f  "
-                "g  g  "
+                "g  h  "
             ;
             justify-items: center;
             align-items: center;
@@ -96,13 +96,11 @@ align-self属性设置单元格内容的垂直位置（上中下），跟align-i
         .zhanghao .shuru {
             /* width: 60%; */
             font-family: "Arial, Helvetica, sans-serif";
-
             font-size: 5vw;
         }
 
         .mima {
             grid-area: e;
-
         }
 
         .mima .bbb {
@@ -115,7 +113,6 @@ align-self属性设置单元格内容的垂直位置（上中下），跟align-i
         .mima .shuru {
             /* width: 60%; */
             font-family: "Arial, Helvetica, sans-serif";
-
             font-size: 5vw;
         }
 
@@ -126,23 +123,29 @@ align-self属性设置单元格内容的垂直位置（上中下），跟align-i
         .denglu {
             grid-area: g;
             /* justify-self: center; */
-
         }
 
+        .quxiao {
+            grid-area: h;
+        }
+
+        /* -------------------------------------- */
 
         .denglu button {
-            border-radius: 4vw;
+            border-radius: 2vw;
+            font-size: 6vw;
 
         }
 
-        .denglu .zhengque {
-            font-size: 6vw;
-            color: #1173e2;
+        .queren {
+            color: #ff0000;
         }
 
-        .denglu .qu {
+
+        .quxiao button {
+            border-radius: 2vw;
             font-size: 6vw;
-            color: #1173e2;
+            color: #ff0000;
         }
     </style>
 </head>
@@ -166,9 +169,10 @@ align-self属性设置单元格内容的垂直位置（上中下），跟align-i
             <input type="checkbox" id="chk" class="jimima" />记住密码
         </div>
         <div class="denglu">
-            <button id="denglu"><a id="tiaozhuan" href="##" class="zhengque">登录</a></button>
-            &ensp;&ensp;&ensp;&ensp;
-            <button id="quxiao" class="qu">取消</button>
+            <button id="denglu"><a id="tiaozhuan" href="##" class="queren">登录</a></button>
+        </div>
+        <div class="quxiao">
+            <button id="quxiao">取消</button>
         </div>
 
     </div>
@@ -194,7 +198,7 @@ align-self属性设置单元格内容的垂直位置（上中下），跟align-i
             } else {
                 if (username.value == "tuo" && pwd.value == "888") {
                     // alert("登录成功");
-                    window.open("canpin.html");
+                    window.open("所有产品汇总.html");
                     //转跳的HTML页面需要与当前HTML页面在一个文件夹中   各种图片也是
                 } else {
                     alert("账号或密码错误");
