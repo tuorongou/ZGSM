@@ -37,14 +37,18 @@ h5 {
   margin: 8.3333vw 0 0 0;
   text-align: center;
   font-size: 8vw;
-  color: #58a033;
+  color: #ff0000;
 }
 
 .nav1 {
   display: flex;
   flex-wrap: wrap;
-  padding: 8vw 0 0 0;
-  margin-top: 5vw;
+  padding: 3vw 0 0 0;
+  margin-top: 3vw;
+  width:100%;
+  height:18vw;
+  line-height:8vw;
+  background-color: #034f52;
 }
 
 .nav1 .item {
@@ -61,14 +65,18 @@ h5 {
 
 .nav1 .item span {
   font-size: 4vw;
-  color: #a55333;
+  color: #ffffff;
+
 }
 
 .nav2 {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0.7rem 0 0 0; */
-  margin-top: 6vw;
+  padding: 3vw 0 0 0;
+  background-color: #034f52;
+  width:100%;
+  height:22vw;
+  line-height:8vw;
 }
 
 .nav2 .item {
@@ -85,7 +93,7 @@ h5 {
 
 .nav2 .item span {
   font-size: 4vw;
-  color: #a55333;
+  color: #ffffff;
 }
 
 
@@ -95,10 +103,10 @@ h5 {
 } */
 /*指导模块  含公共模块*/
 .content {
-  padding: 0.4rem;
+  padding: 0;
   /*内容往中间走一点*/
   /* background-color: aqua;*/
-  margin: 3vw;
+  margin: 0;
 }
 
 /* .content .con-head {
