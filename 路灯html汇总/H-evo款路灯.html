@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--是一个可以定制的CSS文件，它让不同的浏览器在渲染网页元素的时候形式更统一。-->
+    <title>H-evo路灯简要说明</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        h2 {
+            width: 100%;
+            height:9vw;
+            font-size: 7vw;
+            font-family: '楷体', Courier, monospace;
+            color: white;
+            background-color: rgb(62, 127, 247);
+            border-radius: 0;
+            box-shadow: 0 0.53vw 10vw 1.5vw rgb(0 161 255);
+            z-index: 99;
+            line-height: 9vw;
+            text-align: center;
+        }
+
+
+        .tuo {
+            display: grid;
+            margin-top: 5vw;
+            grid-template-columns: 25vw 25vw 25vw 25vw;
+            /*用fr盒子会被内容撑开*/
+            grid-template-rows: 9vw 36vw 51.2vw 36vw auto;
+            /* gap:1.5333vw 1.5333vw; */
+            /* font-size: 2.6666vw; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* overflow: hidden; */
+            grid-template-areas:
+                /*分成4列4行*/
+                ".  .  .  ."
+                "a  a  h  h"
+                "b  b  b  b"
+                "c  d  e  g"
+                "f  f  f  f"
+            ;
+            /* justify-items: center; */
+            align-items: center;
+        }
+
+
+
+        nav {
+            grid-area: a;
+            /* max-width: 80px; */
+            /* box-sizing: border-box;  */
+            font-size: 2.57vw;
+            color: rgb(0, 0, 0);
+            /* transform: scale(1.0);盒子变大缩小 */
+            /* background-color: rgb(250, 135, 135); */
+            /* border-radius: 3.95vw; */
+            padding-left: 10vw;
+            height: 35vw;
+            /*超出的内容可以滚屏来看*/
+            overflow: scroll;
+            /* 不要换行 */
+            white-space: nowrap;
+            font-family: '宋体', Arial, Helvetica, sans-serif;
+            /* transform:rotate(30deg); 把这个盒子转一个 角度 */
+            background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+            /* box-shadow: 0.1875rem 0.125rem 0.825rem 0.125rem rgb(45, 207, 12); */
+        }
+
+        main {
+            position: relative;
+            grid-area: b;
+            height: 51.2vw;
+            background-color: rgb(176, 241, 231);
+            border-radius: 3.95vw;
+            margin-top: 3vw;
+            padding: 2.1333vw;
+            font-size: 4vw;
+            overflow: scroll;
+            /* 不要换行 */
+            white-space: nowrap;
+            font-family: '楷体', 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+            background: -webkit-linear-gradient(top, rgb(206, 234, 219), rgb(171, 239, 235), rgb(175, 175, 197));
+        }
+
+        main .xiangqingye {
+            position: absolute;
+            width: 20vw;
+            right: 2vw;
+            bottom: 2vw;
+
+        }
+
+        main a {
+            display: block;
+            color: rgb(255, 255, 255);
+            font-size: 4vw;
+            font-weight: 700;
+            /* font-family: "黑体"; */
+            background-color: #2394ff;
+            width: 20vw;
+            height: 20vw;
+            border-radius: 10vw;
+            text-align: center;
+            line-height: 20vw;
+        }
+
+        .suomin {
+            grid-area: h;
+            height: 35vw;
+            background-color: rgb(255, 255, 255);
+            /* border-radius: 3.95vw; */
+            position: relative;
+            overflow: scroll;
+            white-space: nowrap;
+        }
+
+        .suomin img {
+            width: 100%;
+            /*图片定位在DIV的中间,好像这种方法还靠谱*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        section {
+            grid-area: c;
+            width: 24.6vw;
+            height: 30vw;
+            /* max-width: 80px; */
+            /* background-color: rgb(156, 165, 216); */
+            border-radius: 3.41333vw;
+            padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
+            font-family: '宋体';
+            font-size: 3vw;
+            font-weight: 500;
+            color: aliceblue;
+            overflow: scroll;
+            white-space: nowrap;
+            /* background: rgba(29, 129, 187, 0.5); */
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
+        }
+
+        aside {
+            grid-area: d;
+            /* background-color: rgb(119, 216, 200); */
+            width: 24.6vw;
+            height: 30vw;
+            border-radius: 3.41333vw;
+            padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
+            font-family: '宋体';
+            font-size: 3vw;
+            font-weight: 500;
+            color: aliceblue;
+            overflow: scroll;
+            white-space: nowrap;
+            /* background: rgba(29, 129, 187, 0.5); */
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
+        }
+
+        .Ra {
+            grid-area: e;
+            width: 24.6vw;
+            height: 30vw;
+            border-radius: 3.41333vw;
+            padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
+            font-family: '宋体';
+            font-size: 3vw;
+            font-weight: 500;
+            color: aliceblue;
+            overflow: scroll;
+            white-space: nowrap;
+            /* background: rgba(29, 129, 187, 0.5); */
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
+        }
+
+        .renzhen {
+            grid-area: g;
+            width: 24.6vw;
+            height: 30vw;
+            border-radius: 3.41333vw;
+            padding: 2.46666vw 0 0 0;
+            margin-top: 6vw;
+            font-family: '宋体';
+            font-size: 3vw;
+            font-weight: 500;
+            color: aliceblue;
+            overflow: scroll;
+            white-space: nowrap;
+            /* background: rgba(29, 129, 187, 0.5); */
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#377aeb), to(#98b7a0));
+        }
+
+        footer {
+            grid-area: f;
+            min-height: 80vw;
+            background-color: rgb(123 255 173);
+            margin-top: 3vw;
+        }
+
+        footer img {
+            width: 100%;
+        }
+
+        /* ----------------------------------------------- 
+        .tuo :nth-child(1) {
+            background-color: rgb(124, 124, 124);
+        }
+*/
+
+        .dizhi {
+            position: fixed;
+            bottom: 5vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
+        }
+
+        .lianxifanshi {
+            position: fixed;
+            bottom: 1vw;
+            /*一定要宽度才能居中*/
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+            /* 不换行 */
+            white-space: nowrap;
+            z-index: 99;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>杭州中港数码技术有限公司</h2>
+    <div class="tuo">
+
+        <nav>
+            规格型号:<br>
+            ZGSM-LD40H4+<br>
+            ZGSM-LD80H4+<br>
+            ZGSM-LD120H4+<br>
+            ZGSM-LD160H4+<br>
+            ZGSM-LD200H4+<br>
+            ZGSM-LD240H4+<br>
+            ZGSM-LD50H5+<br>
+            ZGSM-LD100H5+<br>
+            ZGSM-LD150H5+<br>
+            ZGSM-LD200H5+<br>
+            ZGSM-LD240H5+<br>
+            ZGSM-LD60H6+<br>
+            ZGSM-LD120H6+<br>
+            ZGSM-LD180H6+<br>
+            ZGSM-LD240H6+
+        </nav>
+
+        <main>它具有以下特点:<br>
+            1:铝压铸电源腔体、铝型材散热<br>
+            2:模块式发光,抗紫外线PC透镜<br>
+            3:最大输出功率高达240W<br>
+            4:采用国内知名品牌电源<br>
+            5:3030光效140LM/W<br>
+            6:5050光效165LM/W<br>
+            7:仰角可调<br>
+            8:水平、垂直皆可安装<br>
+            9:按钮式开盖设计
+            <div class="xiangqingye"><a href="../StreetLight-datasheet/DS_H_EVO_StreetLight.pdf">查看详情</a></div>
+        </main>
+        <div class="suomin">
+            <img src="../images/Hevo路灯.jpg" alt="">
+        </div>
+        <section>
+            &ensp;可选光谱:<br>
+            &ensp;&ensp;TYPE I-M(30) <br>
+            &ensp;&ensp;TYPE II-M(30/50) <br>
+            &ensp;&ensp;TYPE II-BLS(30) <br>
+            &ensp;&ensp;TYPE III-M(30/50)<br>
+            &ensp;&ensp;TYPE V-S(30/50)
+        </section>
+        <div class="Ra">
+            &ensp;可选显指:<br>
+            &ensp;&ensp;70<br>
+            &ensp;&ensp;80<br>
+            &ensp;&ensp;90
+        </div>
+        <aside>
+            &ensp;可选色温:<br>
+            &ensp;&ensp;&ensp;&ensp;3000K<br>
+            &ensp;&ensp;&ensp;&ensp;4000K<br>
+            &ensp;&ensp;&ensp;&ensp;5000K<br>
+            &ensp;&ensp;&ensp;&ensp;5700K
+        </aside>
+        <div class="renzhen">
+            &ensp;取得认证:<br>
+            &ensp;&ensp;CE/CB<br>
+            &ensp;&ensp;ENEC<br>
+            &ensp;&ensp;ROHS<br>
+            &ensp;&ensp;IK10/IP66<br>
+            &ensp;&ensp;LM79/LM80<br>
+            &ensp;&ensp;UL<br>
+            &ensp;&ensp;GS<br>
+            &ensp;&ensp;FCC<br>
+            &ensp;&ensp;SAA<br>
+            &ensp;&ensp;UKAS<br>
+        </div>
+        <footer>
+            <img src="../images/H款路灯应用案例.jpg.webp" alt="">
+        </footer>
+    </div>
+
+    <div class="dizhi">
+        杭州临安玲珑工业区锦溪南路1188号
+    </div>
+    <div class="lianxifanshi">
+        微信:t372151; QQ:530847653; 手机:15958131886;庹荣鸥
+    </div>
+
+
+</body>
+
+</html>
